@@ -1,0 +1,122 @@
+/* Soloride.css */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #d4edda; /* light green */
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2e8b57; /* darker green */
+  color: white;
+  padding: 20px 0;
+}
+
+main {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+h2 {
+  margin-top: 0;
+  color: #2e8b57;
+}
+
+label, input, button {
+  font-size: 15px;
+}
+
+input[type="text"], input[type="number"] {
+  display: block;
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 8px 0 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+button:hover {
+  background-color: #256b45;
+}
+
+#pricing-settings {
+  display: none;
+}
+
+#result {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #333;
+  background: #f7fff7;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0f3e7;
+}
+
+.muted {
+  color: #555;
+  font-size: 13px;
+}
+
+#add-location, #known-places {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.places-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.place-pill {
+  background: #f0fff4;
+  border: 1px solid #b2d8b2;
+  padding: 8px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.place-pill:hover {
+  background: #e7fff0;
+  transform: translateY(-2px);
+}
+
+.driver-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  background: #f9fff9;
+}
+
+
+footer {
+  margin-top: 20px;
+  padding: 16px;
+  background: #2e8b57;
+  color: white;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+}

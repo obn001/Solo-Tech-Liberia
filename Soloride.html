@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoloRide Liberia</title>
+  <link rel="stylesheet" href="Soloride.css" />
+</head>
+<body>
+  <header>
+    <h1>🚖 SoloRide Liberia</h1>
+    <p>Find distance, time & fares for routes in Monrovia</p>
+  </header>
+
+  <main>
+    <section id="route-finder">
+      <h2>Find Your Route</h2>
+
+      <label for="from">From:</label>
+      <input type="text" id="from" placeholder="Enter starting location (e.g. red light)" list="placesList" />
+
+      <label for="to">To:</label>
+      <input type="text" id="to" placeholder="Enter destination (e.g. broad street)" list="placesList" />
+
+      <label for="payment">Payment Method</label>
+<select id="payment">
+  <option value="">Select payment method</option>
+  <option value="Cash">Cash</option>
+  <option value="Mobile Money">Mobile Money</option>
+  <option value="Orange Money">Orange Money</option>
+</select>
+
+      <datalist id="placesList"></datalist>
+
+      <button id="searchBtn">Search</button>
+
+      <div id="result"></div>
+      <p id="hint" class="muted">Tip: Type one of the known places or add a new place below.</p>
+    </section>
+
+    <section id="drivers">
+    <h2>Available Drivers</h2>
+    <div id="driverList"></div>
+    </section>
+
+    <section id="add-location">
+      <h2>Add / Update Location</h2>
+      <input type="text" id="locName" placeholder="Place name (e.g. red light)" />
+      <input type="text" id="locLat" placeholder="Latitude (e.g. 6.3139)" />
+      <input type="text" id="locLon" placeholder="Longitude (e.g. -10.7600)" />
+      <button id="addLocationBtn">Add / Update Location</button>
+      <p id="addMsg"></p>
+    </section>
+
+
+    <section id="pricing-settings">
+      <h2>Fare Settings (editable)</h2>
+      <label>Base Fare (LD$): <input type="number" id="baseFare" value="100" /></label>
+      <label>Price per km (LD$): <input type="number" id="pricePerKm" value="45" /></label>
+      <label>Average speed (km/h): <input type="number" id="avgSpeed" value="25" /></label>
+      <button id="saveSettings">Save</button>
+    </section>
+
+    <section id="known-places">
+      <h2>Known Places (click to autofill)</h2>
+      <div id="placesListUI" class="places-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SoloRide Liberia | Built by Solo Tech</p>
+  </footer>
+
+  <script src="Monrovia-locations.js"></script>
+  <script src="Soloride.js"></script>
+</body>
+</html>
